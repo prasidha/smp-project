@@ -1,4 +1,5 @@
 import React, { useReducer , createContext } from 'react'
+import LoginPage from './LoginPage';
 const dark = {
     name:"dark",
     color:"#fff",
@@ -17,7 +18,7 @@ export const themeContext = createContext()
 function ThemeContext(props) {
     const [theme, dispatchTheme] = useReducer(themeReducer, dark)
     return (
-        <themeContext.Provider value={{test : 123}}>
+        <themeContext.Provider value={[theme, dispatchTheme]}>
             {props.children}
         </themeContext.Provider>
     )

@@ -65,7 +65,7 @@
   }
   
   .login__form {
-    padding: 75px;
+    /* padding: 75px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -74,16 +74,21 @@
   }
   
   .swticher {
+    margin-top: -2rem;
     display: flex;
     align-items: center;
     align-self: flex-end;
+  }
+  .swticher > p{
+    color:rgba(108, 92, 231, 0.5);
+    margin-Right: 5rem;
   }
   
   .loginInputs {
     text-align: left;
     padding: 0 60px;
   }
-  
+
   .loginInputs h1 {
     font-size: 34px;
     font-size: 500;
@@ -122,8 +127,7 @@
   }
   .website{
     margin-right:17rem;
-    margin-top:4rem;
-
+    margin-top:5rem;
   }
   @media (max-width: 1650px) {
     .login__info {

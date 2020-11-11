@@ -1,0 +1,7 @@
+.sidebar{
+   width:5%;
+   flex-direction: column; 
+   height:100vh;
+   border-right: 1px solid lightgray;
+
+}

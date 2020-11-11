@@ -1,0 +1,36 @@
+.statusbar{
+    width: 94%;
+    float:right;
+    height:23vh;
+    border-bottom: 1px solid lightgray;
+}
+
+
+.top__statusbar{
+    display: flex;
+    justify-content: space-between;
+  
+}
+.notification{
+   
+    width:20%; 
+    display: flex;
+    justify-content: space-around;
+ 
+}
+.bottom__statusbar{
+    display: flex;
+    justify-content: space-between;
+    /* margin-top:-1rem; */
+}
+
+.right__statusbar{
+   display: flex;
+   width:20%;
+   border:1px solid;
+ justify-content: space-between;
+
+}
+.switcher{
+    
+}
