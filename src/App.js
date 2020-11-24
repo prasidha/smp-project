@@ -1,19 +1,29 @@
-import React ,{ useState, useEffect} from 'react'
+import React ,{ useState, useEffect,createContext} from 'react'
 import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom'
 import LoginPage from './LoginPage'
 import HomePage from './HomePage'
+import './App.css'
+import MailPage from './MailPage'
 
 function App() {
     const [isLoggedIn, setIsLoggedIn] = useState(false)
+   
+    const login = () => {
+        setIsLoggedIn(true)
+    }
     
     const logout = () => {
         setIsLoggedIn(false)
     }
 
     // useEffect(() => {
-    //    setIsLoggedIn(true)
-    // }, [])  
+       
+    // }, [isLoggedIn])
+
+     
+ console.log(isLoggedIn)
     return (
+
        <Router>
             <Switch>
                 <Route exact path="/" 
@@ -21,7 +31,7 @@ function App() {
                         isLoggedIn ? 
                             <Redirect to ="/home"/> : 
                             <LoginPage 
-                                setIsLoggedIn={setIsLoggedIn}                           
+                                login={login}                           
                             />  
                     }
                     />
@@ -33,9 +43,18 @@ function App() {
                             /> :
                       <Redirect to ="/" />
                 }/>
+
+                <Route exact path="/application"
+                render ={ () => 
+               isLoggedIn ? 
+                  <MailPage logout ={logout}/> :
+                  <Redirect to ="/" />
+            }/>
+
             </Switch>
-       </Router>
+       </Router>  
     )
 }
-
 export default App
+
+

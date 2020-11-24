@@ -1,0 +1,12 @@
+.recent_activities{
+    border-top: 5px solid #fff;
+    border-radius: 5px 5px 15px 15px;
+    width: 90%;
+    padding: 30px 20px;
+   
+}
+.activity{
+    margin: 20px 0;
+    margin-left: 30px;
+    font-size: 0.9rem;
+}

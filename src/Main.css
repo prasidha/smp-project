@@ -1,0 +1,33 @@
+.main__container{
+  margin-top:.1px;
+  margin-left: 4.5rem;
+  height:475px;
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows:150px auto; 
+  grid-gap:5px; 
+}
+.attendance__div{
+  grid-column: 1/5;
+}
+.notice__div{
+  width:380px;
+  margin:1rem;
+  grid-column: 5/7;
+  grid-row: 1/-1;
+ 
+}
+.activities__div{
+  width:380px;
+  margin:1rem;
+  grid-column: 9/-1;
+  grid-row: 1/-1;
+
+
+
+}
+.calendar__div{
+  grid-column: 1/5;
+}
+
+ 

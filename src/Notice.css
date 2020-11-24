@@ -1,0 +1,33 @@
+.notice__board{
+    /* box-shadow: 5px 10px 10px 2px lightgrey; */
+    border-radius: 5px 5px 15px 15px;
+    margin-left: 1rem;
+    height:419px;
+    border-radius: 5px 5px 15px 15px;
+    
+}
+.notice_card{
+    border-left: 5px solid #fff;
+    border-radius: 5px 15px 15px 5px;
+    margin: 25px 15px; 
+    justify-content: space-between;
+    display: flex;
+    width:90%;
+    flex-direction: column;
+}
+.notice{
+    height: 50px;
+    width: 100%;
+    line-height: 1.2rem;
+    margin-bottom: 15px 0;
+    font-size: 0.9rem;
+    overflow: hidden;
+}
+.date_posted{
+    display: flex;
+    align-items: center;
+}
+.date_posted p{
+    margin-left: 10px;
+    font-size: 0.8rem;
+}

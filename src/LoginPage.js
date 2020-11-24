@@ -6,10 +6,10 @@ import WbSunnyIcon from '@material-ui/icons/WbSunny';
 import {Button,Switch} from '@material-ui/core'
 import {themeContext} from './ThemeContext'
 
-function LoginPage(props) {
+function LoginPage({login}) {
     const [theme , dispatchTheme] = useContext(themeContext)
-    const [username, setUsername] = useState()
-    const [password, setPassword] = useState()
+    const [username, setUsername] = useState("")
+    const [password, setPassword] = useState("")
     const date= new Date()
     const hour = date.getHours()
 
@@ -35,8 +35,9 @@ function LoginPage(props) {
 
      const logIn = (e) => {
          e.preventDefault();
-         if(username === "admin" && password === "admin"){
-               props.setIsLoggedIn(true)
+         if (username === "admin" && password === "admin"){
+            localStorage.setItem("token", "logged in");
+               login()
                setUsername("")
                setPassword("")   
          }
@@ -168,3 +169,4 @@ function LoginPage(props) {
 }
 
 export default LoginPage
+

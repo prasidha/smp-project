@@ -1,0 +1,30 @@
+.mail__container{
+  /* border:5px solid red; */
+  height:465px;
+  margin-left:4.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.description{
+    margin: 1rem;
+}
+.input{
+    height:50px;
+    width:500px;
+    color:lightgrey;
+    outline:none;
+   
+}
+.input2{
+    height:200px;
+    width:500px;
+    color:lightgrey;
+    outline: none;
+   
+}
+/* h4{
+    margin-right: 27rem;
+} */
