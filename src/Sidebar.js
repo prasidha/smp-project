@@ -39,10 +39,10 @@ function Sidebar() {
             }}
               
               >
-       <HomeIcon/>  
-         
+               <HomeIcon/>  
               </IconButton>
-              </Link>  
+              </Link> 
+
               </div>
 
 
@@ -91,17 +91,18 @@ function Sidebar() {
                </div>
 
                <div className="people__icon">
-               <IconButton
-               style={theme.name === "dark" ? {
-                color:'#fff',
-                
-            } : {
-                color: "#2D3436",
-            
-            }}
-               ><PeopleIcon/>
-               </IconButton>
-               </div>
+                       <Link to ="/teacher">
+                            <IconButton
+                                style={theme.name === "dark" ? {
+                                  color:'#fff',
+                                     } :
+                                     {
+                                     color: "#2D3436",
+                                      }}>
+                                  <PeopleIcon/>
+                            </IconButton>
+                        </Link>
+                </div>
           
             <div className="settting__icon">
               

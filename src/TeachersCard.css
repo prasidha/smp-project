@@ -1,0 +1,7 @@
+.teacher__card{
+    width: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    height:120px;
+}
+

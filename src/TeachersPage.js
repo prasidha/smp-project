@@ -1,12 +1,14 @@
 import React from 'react'
 import Sidebar from './Sidebar'
+import Teachers from './Teachers'
+import Statusbar from './Statusbar'
 
 function TeachersPage() {
     return (
-        <div>
+        <div style={{position:'absolute'}}>
             <Sidebar/>
-            <statusbar/>
-            
+            <Statusbar/>
+            <Teachers/>
         </div>
     )
 }

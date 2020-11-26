@@ -1,5 +1,5 @@
 import React, { useReducer , createContext } from 'react'
-import LoginPage from './LoginPage';
+
 const dark = {
     name:"dark",
     color:"#fff",

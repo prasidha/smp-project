@@ -23,7 +23,6 @@ function Main() {
            
         }}
           >
-        
               <div className="attendance__div"><Attendance/></div>
                <div className="notice__div"><Notice/></div>
                <div className="activities__div"><Activities/></div>
